@@ -47,7 +47,7 @@ FinSight-Engine/
 │   ├── services/         # 业务逻辑层 (Agent / RAG Service)
 │   └── main.py           # 应用启动入口
 ├── logs/ 
-│   ├── api/              # 记录日志
+│   ├── finsight.log      # 记录日志
 ├── scripts/
 │   └── etl_processor.py  # 多线程 ETL 清洗脚本 (含 DLQ 演示)
 ├── data/                 # 演示用测试文档 (PDF)
@@ -150,4 +150,5 @@ python scripts/etl_processor.py
 - **Observability:** Loguru, Sentry
 
 - **Deployment:** Docker, Docker-Compose
+
 

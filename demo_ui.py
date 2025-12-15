@@ -6,7 +6,7 @@ import json
 API_URL = "http://localhost:8000/api/v1/chat"
 
 st.set_page_config(page_title="FinSight Engine", page_icon="🤖")
-st.title("🤖 FinSight 企业知识库")
+st.title("🤖 企业知识库")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -35,4 +35,5 @@ if prompt := st.chat_input():
             else:
                 st.error(f"Error: {resp.text}")
         except Exception as e:
+
             st.error(f"Connection Failed: {e}")

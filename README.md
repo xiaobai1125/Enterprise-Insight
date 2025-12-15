@@ -20,9 +20,9 @@
 
 ### 2. 🕷️ 高鲁棒性 ETL 流水线
 
-- **多线程并发：** 基于 `ThreadPoolExecutor` 实现百万级文档的高效清洗。
+- **多线程并发：** 基于 `ThreadPoolExecutor` 实现文档的高效清洗。
 - **死信队列 (DLQ)：** 内置异常重试机制，自动将损坏文件移入死信队列，保障主流程不崩溃。
-- **正则清洗：** 内置 30+ 组金融/法务文档专用正则规则，精准去除页眉、水印与乱码。
+- **正则清洗：** 内置多组文档专用正则规则，精准去除页眉、水印与乱码。
 
 ### 3. ⚡ 生产级工程规范
 
@@ -150,6 +150,7 @@ python scripts/etl_processor.py
 - **Observability:** Loguru, Sentry
 
 - **Deployment:** Docker, Docker-Compose
+
 
 
 

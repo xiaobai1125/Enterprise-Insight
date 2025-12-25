@@ -4,7 +4,7 @@ services:
   # 1. 你的后端服务
   api:
     build: .
-    container_name: finsight-backend
+    container_name: Enterprise-Insight-backend
     ports:
       - "8000:8000"
     volumes:
@@ -30,4 +30,5 @@ services:
 
 networks:
   finsight-net:
+
     driver: bridge

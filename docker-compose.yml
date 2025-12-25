@@ -18,7 +18,7 @@ services:
       - Enterprise-Insight-net
     restart: always
 
-  # 2. Redis 缓存服务 (简历亮点)
+  # 2. Redis 缓存服务
   redis:
     image: redis:7-alpine
     container_name: Enterprise-Insight/-redis
@@ -32,4 +32,5 @@ networks:
   Enterprise-Insight-net:
 
     driver: bridge
+
 
